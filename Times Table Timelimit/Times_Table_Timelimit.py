@@ -10,7 +10,7 @@ def my_input(fileno, q):
     q.put(input().strip())
 
     
-def load_answer(timeout):
+def get_answer(timeout):
            
     fn = sys.stdin.fileno() 
 
@@ -72,7 +72,7 @@ def main_screen():
             print("\n   {0}.    {1} : {2} = ".format(i,x*y,x), end="")
             correct_answer = str(y)
 
-        (answer, timelimit) = load_answer(timeout)
+        (answer, timelimit) = get_answer(timeout)
 
         if not timelimit:
             if answer == correct_answer:
