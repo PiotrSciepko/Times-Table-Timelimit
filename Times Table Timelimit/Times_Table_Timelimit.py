@@ -31,7 +31,7 @@ def load_answer(timeout):
         return ("", True)
             
             
-def my_random():
+def get_numbers():
 
     from random import randint
     
@@ -61,7 +61,7 @@ def main_screen():
         print("\n   T A B L I C Z K A  M N O Ż E N I A\n   ","="*34, sep="")
         print("   ||"+"*"*i+" "*(30-i)+"||\n")
 
-        while (x,y,ster) in asked: (x,y,ster) = my_random()
+        while (x,y,ster) in asked: (x,y,ster) = get_numbers()
 
         asked.append((x,y,ster))
 
