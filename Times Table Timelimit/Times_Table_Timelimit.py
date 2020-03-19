@@ -88,7 +88,7 @@ def main_screen():
         time.sleep(1)
 
     print('\n   Liczba odpowiedzi poprawnych:'+ str(points_scored).rjust(4))
-    print('   Liczba odpowiedzi błędnych:'+ str(i-points_scored).rjust(6))
+    print('   Liczba odpowiedzi błędnych:'+ str(number_of_questions-points_scored).rjust(6))
     print()
 
     for i in mistakes:
